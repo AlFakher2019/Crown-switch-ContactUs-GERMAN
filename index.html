@@ -1,0 +1,226 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Switch Kontakt</title>
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <script src="js/validation.js"></script>
+    <script src="js/contact-reason.js" defer></script>
+</head>
+
+<body class="zf-backgroundBg">
+    <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+    <div class="zf-templateWidth">
+        <form
+            action='https://forms.zohopublic.eu/ookaportal/form/SendeunseineNachricht/formperma/8wkCKntJKgLDVUuQLL8Gum1EWEF9t7k1QbJwj2NWRjo/htmlRecords/submit'
+            name='form' method='POST'
+            onSubmit='javascript:document.charset="UTF-8"; return cs_ValidateAndSubmit();'
+            accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
+            <input type="hidden" name="zf_referrer_name"
+                value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+            <input type="hidden" name="zf_redirect_url"
+                value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+            <input type="hidden" name="zc_gad"
+                value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+            <div class="zf-templateWrapper">
+                <div class="zf-subContWrap zf-topAlign">
+                    <ul>
+                        <div class="zfgrid_Wrapper">
+                            <div class="zftwoColumn zfMultiColGrid">
+                                <div class="zfCol">
+                                    <div class="zf-tempFrmWrapper zf-large">
+                                        <label class="zf-labelName" for="Name_First">Vorname<em
+                                                class="zf-important"> *</em></label>
+                                        <div class="zf-tempContDiv">
+                                            <input type="text" id="Name_First" maxlength="255" name="Name_First"
+                                                fieldType=7 aria-required="true" aria-describedby="Name_First_error"
+                                                placeholder="" />
+                                            <p id="Name_First_error" class="zf-errorMessage" style="display:none;">
+                                                Bitte geben Sie Ihren Vornamen ein.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zfCol">
+                                    <div class="zf-tempFrmWrapper zf-large">
+                                        <label class="zf-labelName" for="Name_Last">Nachname<em
+                                                class="zf-important"> *</em></label>
+                                        <div class="zf-tempContDiv">
+                                            <input type="text" id="Name_Last" maxlength="255" name="Name_Last"
+                                                fieldType=7 aria-required="true" aria-describedby="Name_Last_error"
+                                                placeholder="" />
+                                            <p id="Name_Last_error" class="zf-errorMessage" style="display:none;">
+                                                Bitte geben Sie Ihren Nachnamen ein.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zfgrid_Wrapper">
+                            <div class="zftwoColumn zfMultiColGrid">
+                                <div class="zfCol">
+                                    <div class="zf-tempFrmWrapper zf-large">
+                                        <label class="zf-labelName" for="Email">E-Mail<em class="zf-important">
+                                                *</em></label>
+                                        <div class="zf-tempContDiv">
+                                            <input type="text" id="Email" name="Email" checktype="c5" value=""
+                                                maxlength="255" fieldType=9 aria-required="true"
+                                                aria-describedby="Email_error" placeholder="" />
+                                            <p id="Email_error" class="zf-errorMessage" style="display: none;">
+                                                Bitte geben Sie Ihre E-Mail-Adresse ein.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zfCol">
+                                    <div class="zf-tempFrmWrapper zf-large">
+                                        <label class="zf-labelName" for="PhoneNumber_countrycode">Telefon</label>
+                                        <div class="zf-tempContDiv">
+                                            <input type="tel" compname="PhoneNumber" name="PhoneNumber_countrycode"
+                                                maxlength="20" checktype="c7" value="" phoneFormat="1"
+                                                isCountryCodeEnabled="false" fieldType="11"
+                                                id="PhoneNumber_countrycode" valType="number" phoneFormatType="1"
+                                                aria-describedby="PhoneNumber_error" placeholder="0123 4567890" />
+                                            <p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">
+                                                Bitte geben Sie eine gültige Telefonnummer ein.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Groups and options are injected from CONTACT_REASONS in
+                             js/contact-reason.js. This select carries no name: the hidden
+                             inputs below are what gets posted, so a single visible choice
+                             fills both the reason and sub-issue fields. -->
+                        <div class="zf-tempFrmWrapper zf-large">
+                            <label class="zf-labelName" for="cs-reasonSelect">Grund der Kontaktaufnahme<em
+                                    class="zf-important"> *</em></label>
+                            <div class="zf-tempContDiv">
+                                <select class="zf-form-sBox cs-reasonSelect" id="cs-reasonSelect" aria-required="true"
+                                    aria-describedby="Dropdown_error">
+                                    <option selected="true" value="-Select-"></option>
+                                </select>
+                                <p id="Dropdown_error" class="zf-errorMessage" style="display:none;">Bitte wählen Sie
+                                    einen Grund der Kontaktaufnahme.</p>
+                            </div>
+                        </div>
+                        <input type="hidden" id="Dropdown" name="Dropdown" value="">
+                        <input type="hidden" id="Dropdown1" name="Dropdown1" value="">
+                        <input type="hidden" id="reasonId" name="reasonId" value="">
+                        <input type="hidden" id="reasonLabel" name="reasonLabel" value="">
+                        <input type="hidden" id="subIssueId" name="subIssueId" value="">
+                        <input type="hidden" id="subIssueLabel" name="subIssueLabel" value="">
+                        <div class="zf-tempFrmWrapper zf-large">
+                            <label class="zf-labelName" for="SingleLine">Betreff<em class="zf-important">
+                                    *</em></label>
+                            <div class="zf-tempContDiv">
+                                <input type="text" id="SingleLine" name="SingleLine" checktype="c1" value=""
+                                    maxlength="255" fieldType=1 aria-required="true"
+                                    aria-describedby="SingleLine_error" placeholder="" />
+                                <p id="SingleLine_error" class="zf-errorMessage" style="display: none;">Bitte
+                                    geben Sie einen Betreff ein.</p>
+                            </div>
+                        </div>
+                        <div class="zf-tempFrmWrapper zf-large">
+                            <label class="zf-labelName" for="MultiLine">Nachricht</label>
+                            <div class="zf-tempContDiv">
+                                <textarea id="MultiLine" name="MultiLine" checktype="c1" maxlength="65535"
+                                    aria-describedby="MultiLine_error" placeholder=""></textarea>
+                                <p id="MultiLine_error" class="zf-errorMessage" style="display: none;">Bitte
+                                    geben Sie eine gültige Nachricht ein.</p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <ul>
+                    <li class="zf-fmFooter">
+                        <button type="submit" class="zf-submitColor" id="cs-submit" disabled>Absenden</button>
+                        <p class="zf-privacyNotice">Wir verwenden die von Ihnen angegebenen Daten, um auf Ihre Anfrage
+                            zu antworten. Weitere Informationen zur Verarbeitung Ihrer personenbezogenen Daten finden
+                            Sie in unserer <a href="#" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">var dateAndMonthRegexFormateArray = zf_SetDateAndMonthRegexBasedOnDateFormate('dd-MMM-yyyy');
+        var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
+        var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);
+        var zf_MandArray = ["Name_First", "Name_Last", "Email", "Dropdown", "SingleLine"];
+        var zf_FieldArray = ["Name_First", "Name_Last", "Email", "PhoneNumber_countrycode", "Dropdown", "SingleLine", "MultiLine"];
+        var zf_ErrorIdMap = {
+            "Name_First": "Name_First_error",
+            "Name_Last": "Name_Last_error",
+            "Email": "Email_error",
+            "PhoneNumber_countrycode": "PhoneNumber_error",
+            "Dropdown": "Dropdown_error",
+            "SingleLine": "SingleLine_error",
+            "MultiLine": "MultiLine_error"
+        };
+        var isSalesIQIntegrationEnabled = false;
+        var salesIQFieldsArray = [];</script>
+    <script type="text/javascript">
+        (function () {
+            var emailRegex = /^[\w]([\w\-.+&'/]*)@([a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,22}$/;
+            var phoneRegex = /^[+]{0,1}[()0-9-. ]+$/;
+
+            function trim(v) { return (v || '').replace(/^\s+|\s+$/g, ''); }
+            function showError(id, show) {
+                var el = document.getElementById(id);
+                if (el) { el.style.display = show ? 'block' : 'none'; }
+            }
+            function watchRequiredText(inputId, errorId) {
+                var el = document.getElementById(inputId);
+                if (!el) { return; }
+                var touched = false;
+                function check() { showError(errorId, touched && trim(el.value).length === 0); }
+                el.addEventListener('blur', function () { touched = true; check(); });
+                el.addEventListener('input', function () { if (touched) { check(); } });
+            }
+            function watchEmail(inputId, errorId) {
+                var el = document.getElementById(inputId);
+                var errEl = document.getElementById(errorId);
+                if (!el) { return; }
+                var touched = false;
+                function check() {
+                    var val = trim(el.value);
+                    if (errEl) {
+                        errEl.textContent = val.length === 0 ? 'Bitte geben Sie Ihre E-Mail-Adresse ein.' : 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+                    }
+                    showError(errorId, touched && (val.length === 0 || !emailRegex.test(val)));
+                }
+                el.addEventListener('input', function () {
+                    el.value = el.value.replace(/[^\w\-.+&'/@]/g, '');
+                    if (touched) { check(); }
+                });
+                el.addEventListener('blur', function () { touched = true; check(); });
+            }
+            function watchPhone(inputId, errorId) {
+                var el = document.getElementById(inputId);
+                if (!el) { return; }
+                function check() {
+                    var val = trim(el.value);
+                    showError(errorId, val.length > 0 && !phoneRegex.test(val));
+                }
+                el.addEventListener('input', function () {
+                    el.value = el.value.replace(/[^0-9()+\-. ]/g, '');
+                    check();
+                });
+                el.addEventListener('blur', check);
+            }
+            function watchDropdown(selectId, errorId) {
+                var el = document.getElementById(selectId);
+                if (!el) { return; }
+                function check() { showError(errorId, el.value === '-Select-'); }
+                el.addEventListener('change', check);
+                el.addEventListener('blur', check);
+            }
+
+            watchRequiredText('Name_First', 'Name_First_error');
+            watchRequiredText('Name_Last', 'Name_Last_error');
+            watchEmail('Email', 'Email_error');
+            watchPhone('PhoneNumber_countrycode', 'PhoneNumber_error');
+            watchDropdown('cs-reasonSelect', 'Dropdown_error');
+            watchRequiredText('SingleLine', 'SingleLine_error');
+        })();
+    </script>
+</body></html>
